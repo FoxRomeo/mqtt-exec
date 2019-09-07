@@ -13,4 +13,7 @@ Example usage
 -------------
 This example shows how to change gpio state on receiving messages:
 
-`mqtt-gpio -h $mqtt_host -t $topic -g $gpio`
+`mqtt-gpio -h $mqtt_host -t $topic -g $wiringpi-pin`
+
+pin numbering from wiringPi is used:
+http://wiringpi.com/pins/
