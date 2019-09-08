@@ -2,6 +2,7 @@ mqtt-gpio
 =========
 
 A simple mqtt subscriber that changes gpio state on mqtt messages
+(based on https://github.com/ncopa/mqtt-exec)
 
 Build requriements
 ------------------
