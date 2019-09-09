@@ -10,12 +10,14 @@ Build requriements
 - C compiler + make
 - libmosquitto
 - wiringpi
+- openssl
 
 Example usage
 -------------
 This example shows how to change gpio state on receiving messages:
-
 `mqtt-gpio -h $mqtt_host -t $topic -g $wiringpi-pin`
+
+see `mqtt-gpio -?` for all available TLS options
 
 pin numbering from wiringPi is used:
 http://wiringpi.com/pins/
