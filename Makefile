@@ -1,5 +1,5 @@
 
-VERSION=0.4.1
+VERSION=0.4.2
 LIBS=-lmosquitto -lwiringPi
 CFLAGS ?= -g -Wall -Werror
 WITH_TLS := 1

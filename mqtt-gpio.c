@@ -275,7 +275,10 @@ int main(int argc, char *argv[])
 	if (id[0] == '\0') {
 		/* generate an id */
 		gethostname(hostname, sizeof(hostname)-1);
-		snprintf(id, sizeof(id), "mqtt-gpio/%x-%s", getpid(), hostname);
+		int ret = snprintf(id, sizeof(id), "mqtt-gpio/%x-%s", getpid(), hostname);
+		if (ret < 0) {
+			abort();
+		}
 	}
 
 
